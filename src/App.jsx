@@ -1,6 +1,7 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ToastContainer } from 'react-toastify'
 import './App.css'
+import FetchTopQuotes from './components/FetchTopQuotes'
 import 'react-toastify/dist/ReactToastify.css'
 
 const queryClient = new QueryClient({
@@ -20,6 +21,7 @@ function App() {
           <h1 className="font-semibold text-2xl">
             React - The Road To Enterprise
           </h1>
+          <FetchTopQuotes />
         </div>
       </QueryClientProvider>
     </>
