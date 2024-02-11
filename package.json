@@ -23,6 +23,7 @@
     "./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": "prettier -w -u"
   },
   "dependencies": {
+    "@esbuild/darwin-x64": "^0.20.0",
     "@tailwindcss/forms": "^0.5.3",
     "@tanstack/react-query": "^4.29.12",
     "@types/node": "^20.2.5",

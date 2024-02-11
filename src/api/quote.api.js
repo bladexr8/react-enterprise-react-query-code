@@ -6,3 +6,7 @@ export const fetchTopQuotes = async () => {
   console.log(response)
   return response.data.quotes
 }
+
+export const postQuote = (quote) => api.post('quotes', quote)
+
+export const resetQuotes = () => api.post('quotes/reset', {})
