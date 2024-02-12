@@ -7,6 +7,13 @@ export const fetchTopQuotes = async () => {
   return response.data.quotes
 }
 
+export const fetchQuotesByPage = async (page) => {
+  const response = await api.get('quotes', { params: { page } })
+  console.log('***Received Response:')
+  console.log(response)
+  return response.data.quotes
+}
+
 export const postQuote = (quote) => api.post('quotes', quote)
 
 export const resetQuotes = () => api.post('quotes/reset', {})
