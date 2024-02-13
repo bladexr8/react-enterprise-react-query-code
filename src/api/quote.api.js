@@ -11,7 +11,7 @@ export const fetchQuotesByPage = async (page) => {
   const response = await api.get('quotes', { params: { page } })
   console.log('***Received Response:')
   console.log(response)
-  return response.data.quotes
+  return response.data
 }
 
 export const postQuote = (quote) => api.post('quotes', quote)
