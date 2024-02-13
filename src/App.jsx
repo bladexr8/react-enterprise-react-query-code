@@ -4,6 +4,7 @@ import './App.css'
 import FetchTopQuotes from './components/FetchTopQuotes'
 import UpdateQuotes from './components/UpdateQuotes'
 import PaginatedQuotes from './components/PaginatedQuotes'
+import InfiniteScrollQuotes from './components/InfiniteScrollQuotes'
 import 'react-toastify/dist/ReactToastify.css'
 
 const queryClient = new QueryClient({
@@ -26,6 +27,7 @@ function App() {
           <UpdateQuotes />
           <FetchTopQuotes />
           <PaginatedQuotes />
+          <InfiniteScrollQuotes />
         </div>
       </QueryClientProvider>
     </>
